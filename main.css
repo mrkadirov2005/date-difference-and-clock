@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    width:100vh;
+    background-color: rgb(4, 4, 46);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.container{
+    box-shadow: 3px 3px 3px 15px orange;
+        width: 70%;
+        height: fit-content;
+        background-color: rgb(7, 13, 67);
+        padding: 30px;
+        border-radius: 10px;
+}
+.input-wrapper{
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: inherit;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+input{
+    border: 0;
+    border-radius: 10px;
+    background-color: white
+;
+}
+.start-date label{
+display: flex;
+/* align-items: 
+justify-content: center; */
+flex-direction: column;
+background-color: inherit;
+font-size:20px ;
+font-weight: 20px;
+}
+#start-date{
+    margin-top: 10px;
+    background-color: rgb(242, 244, 247);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+}
+label{
+    padding-left: 15px;
+    margin-top: 10px;
+    color: orangered;
+    display: flex;
+    /* align-items: 
+    justify-content: center; */
+    flex-direction: column;
+    background-color: inherit;
+    font-size:20px ;
+    font-weight: 20px;
+}
+input[type='date']::-webkit-calendar-picker-indicator{
+    background-color:brown;
+    /* border: 10px ridge brown; */
+    border-radius: 5px;
+}
+input[type='date']::-webkit-calendar-picker-indicator:hover{
+    background-color: green;
+}
+.end-date label{
+    color: orangered;
+    display: flex;
+    /* align-items: 
+    justify-content: center; */
+    flex-direction: column;
+    background-color: inherit;
+    font-size:20px ;
+    font-weight: 20px;
+    }
+    #end-date{
+        margin-top: 10px;
+        padding: 10px;
+        background-color: rgb(239, 241, 244);
+        font-size: 20px;
+        font-weight: 700;
+        font-style: italic;
+    }
+.second-row{
+    background-color:inherit;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-items: center; */
+
+}
+button{
+    padding: 2px;
+    margin: 3px;
+    background-color: rgb(129, 105, 225);
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
+}
+button:hover{
+    background-color: rgb(7, 7, 97);
+}
+.third-row{
+    padding: 30px;
+    margin: 5px;
+    /* background-color: rgb(89, 89, 189); */
+    background-color: rgb(15, 6, 42);
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    color: brown;
+    font-weight: 1000;
+    font-size: 25px;
+    /* text-shadow: 20px -35px 2px orange; */
+}
+
+/* clock */
+.clock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(26, 20, 20);
+    border-radius: 2px;
+    top: 0;
+    left: 0;
+
+}
+span{
+    color: white;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 700;
+    
+}
+
+
+
